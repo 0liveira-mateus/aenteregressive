@@ -24,7 +24,7 @@ Library    Collections
 *** Keywords ***
 
 Dado um usuário acessando a página de login 
-    Open Browser    ${logar.url_login}    firefox
+    Open Browser    ${logar.url_login}    firefox    options=add_argument("--headless")
 
     ${tempo_esperado}    Set Variable    10
     Set Test Variable    ${tempo_esperado}
